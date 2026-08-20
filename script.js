@@ -2,7 +2,7 @@
 const projects = [
     {
         title: "Site de Estudos ENSINO EXPRESS",
-        author: "Arthur F. Almeida",
+        author: "Arthur F. Almeida | Feat. Vitor Baptistas Fonseca",
         category: "HTML | CSS | JS",
         image: "https://i.ibb.co/1JPdcWfb/ensino-express.png",
         description: "Site de estudos para cursandos do ENEM e Ensino Médio."
