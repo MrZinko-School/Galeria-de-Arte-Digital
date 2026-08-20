@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Arte Digital</title>
+    <!-- Importação de fontes clássicas e elegantes: Playfair Display (serifada) e Plus Jakarta Sans (limpa) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header class="portfolio-header">
+        <div class="badge">Programação &amp; Design</div>
+        <h1><span>Arthur</span> Ferreira Almeida</h1>
+        <p>Meu portifólio</p>
+        <div class="header-divider"></div>
+    </header>
+
+    <main class="container">
+        <!-- O JS preenche a galeria com as 8 obras de arte -->
+        <div class="gallery-grid" id="gallery-grid"></div>
+    </main>
+
+    <!-- LIGHTBOX / SALA DE EXPOSIÇÃO -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="close-btn" title="Fechar (Esc)">&times;</button>
+        <button class="lightbox-nav prev" id="prev-btn" title="Obra Anterior">&#10094;</button>
+        <button class="lightbox-nav next" id="next-btn" title="Próxima Obra">&#10095;</button>
+
+        <div class="lightbox-card">
+            <div class="lightbox-img-wrapper">
+                <img src="" alt="" id="lightbox-img">
+            </div>
+            <div class="lightbox-info">
+                <span id="lightbox-tag" class="tag-badge"></span>
+                <h2 id="lightbox-title"></h2>
+                <h4 id="lightbox-author"></h4>
+                <p id="lightbox-description"></p>
+                <div class="counter" id="lightbox-counter">01 / 08</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
